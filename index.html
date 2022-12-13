@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap 5 - Transparent Navbar</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="stylepopup.css" />
     <style>
       .banner-image {
-        background-image: url('img/imah.jpg');
+        background-image: url('imah.jpg');
         background-size: cover;
       }
     </style>
@@ -17,7 +18,7 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
             <a class="navbar-brand" href="#">
-            <img src="img/logo.JPG" alt="Avatar Logo" style="width: 100px;" class="rounded-pill"> 
+            <img src="logo.JPG" alt="Avatar Logo" style="width: 100px;" class="rounded-pill"> 
             </a>
 
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -110,17 +111,20 @@
         </p>
       </div>
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-      var nav = document.querySelector('nav');
 
-      window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 100) {
-          nav.classList.add('bg-dark', 'shadow');
-        } else {
-          nav.classList.remove('bg-dark', 'shadow');
-        }
-      });
-    </script>
+    <!-- pop Up -->
+    <div class="popup">
+      <button id="close">&times;</button>
+      <h2>This is the title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odio error ducimus doloribus ut asperiores cumque nostrum quibusdam, numquam id?</p>
+      <a href="#">Let's Go</a>
+    </div>
+
+
+    <!-- Script JS -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- End Script JS -->
+    
   </body>
 </html>
